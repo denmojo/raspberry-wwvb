@@ -6,7 +6,7 @@
 
 // Time difference with New York time zone
 // 6 hours for Central European Time
-#define HOUR_DIFF 6
+#define HOUR_DIFF 0
 
 int last = 0;
 int i;
@@ -81,7 +81,7 @@ int main (void)
   }
 
   // DST flag does not work for some reason...
-  isdst = 0; 
+  isdst = 1; 
 
   // Initialise WiringPi GPIO
   if (wiringPiSetupGpio() == -1) exit(1);
